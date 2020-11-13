@@ -5,7 +5,7 @@
 //  Created by Rafael Freitas on 11/11/2020.
 //
 
-import Foundation
+import SwiftUI
 
 class MainScreenModel: ObservableObject {
     
