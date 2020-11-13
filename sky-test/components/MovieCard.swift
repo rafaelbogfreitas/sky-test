@@ -43,6 +43,7 @@ struct MovieCard: View {
             }
             .foregroundColor(.white)
         }
+        
     }
     
 }
