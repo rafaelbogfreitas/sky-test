@@ -3,16 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		52631D55255CACC00047418C /* sky_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D54255CACC00047418C /* sky_testApp.swift */; };
-		52631D57255CACC00047418C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D56255CACC00047418C /* ContentView.swift */; };
 		52631D59255CACC30047418C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52631D58255CACC30047418C /* Assets.xcassets */; };
 		52631D5C255CACC30047418C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52631D5B255CACC30047418C /* Preview Assets.xcassets */; };
 		52631D67255CACC30047418C /* sky_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D66255CACC30047418C /* sky_testTests.swift */; };
 		52631D72255CACC30047418C /* sky_testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D71255CACC30047418C /* sky_testUITests.swift */; };
+		52631D85255CAD430047418C /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D84255CAD430047418C /* MainScreenView.swift */; };
+		52631D8D255CADB80047418C /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D8C255CADB80047418C /* MainScreenModel.swift */; };
+		52631D96255CAE1B0047418C /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D95255CAE1B0047418C /* ApiManager.swift */; };
+		52631D9F255CAE440047418C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D9E255CAE440047418C /* Movie.swift */; };
+		52D97335255D4274000F728E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D97334255D4274000F728E /* DetailView.swift */; };
+		52D97365255D4CDB000F728E /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52D97364255D4CDB000F728E /* KingfisherSwiftUI */; };
+		52D9736D255D55D5000F728E /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9736C255D55D5000F728E /* MovieCard.swift */; };
+		52D97372255D586F000F728E /* MovieCover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D97371255D586F000F728E /* MovieCover.swift */; };
+		52D97377255D6B5B000F728E /* MoviesGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D97376255D6B5B000F728E /* MoviesGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +43,6 @@
 /* Begin PBXFileReference section */
 		52631D51255CACC00047418C /* sky-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sky-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52631D54255CACC00047418C /* sky_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sky_testApp.swift; sourceTree = "<group>"; };
-		52631D56255CACC00047418C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		52631D58255CACC30047418C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52631D5B255CACC30047418C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52631D5D255CACC30047418C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,6 +52,14 @@
 		52631D6D255CACC30047418C /* sky-testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sky-testUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52631D71255CACC30047418C /* sky_testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sky_testUITests.swift; sourceTree = "<group>"; };
 		52631D73255CACC30047418C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52631D84255CAD430047418C /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		52631D8C255CADB80047418C /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		52631D95255CAE1B0047418C /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		52631D9E255CAE440047418C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		52D97334255D4274000F728E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		52D9736C255D55D5000F728E /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
+		52D97371255D586F000F728E /* MovieCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCover.swift; sourceTree = "<group>"; };
+		52D97376255D6B5B000F728E /* MoviesGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52D97365255D4CDB000F728E /* KingfisherSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,8 +111,10 @@
 		52631D53255CACC00047418C /* sky-test */ = {
 			isa = PBXGroup;
 			children = (
+				52D9732F255D41D9000F728E /* components */,
+				52631D94255CAE080047418C /* api */,
+				52631D82255CACDB0047418C /* screens */,
 				52631D54255CACC00047418C /* sky_testApp.swift */,
-				52631D56255CACC00047418C /* ContentView.swift */,
 				52631D58255CACC30047418C /* Assets.xcassets */,
 				52631D5D255CACC30047418C /* Info.plist */,
 				52631D5A255CACC30047418C /* Preview Content */,
@@ -130,6 +148,59 @@
 			path = "sky-testUITests";
 			sourceTree = "<group>";
 		};
+		52631D82255CACDB0047418C /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				52D97333255D41F1000F728E /* detail */,
+				52631D83255CAD220047418C /* main */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		52631D83255CAD220047418C /* main */ = {
+			isa = PBXGroup;
+			children = (
+				52631D84255CAD430047418C /* MainScreenView.swift */,
+				52631D8C255CADB80047418C /* MainScreenModel.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		52631D94255CAE080047418C /* api */ = {
+			isa = PBXGroup;
+			children = (
+				52631D9D255CAE2C0047418C /* DataModel */,
+				52631D95255CAE1B0047418C /* ApiManager.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		52631D9D255CAE2C0047418C /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				52631D9E255CAE440047418C /* Movie.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		52D9732F255D41D9000F728E /* components */ = {
+			isa = PBXGroup;
+			children = (
+				52D9736C255D55D5000F728E /* MovieCard.swift */,
+				52D97371255D586F000F728E /* MovieCover.swift */,
+				52D97376255D6B5B000F728E /* MoviesGrid.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		52D97333255D41F1000F728E /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				52D97334255D4274000F728E /* DetailView.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +217,9 @@
 			dependencies = (
 			);
 			name = "sky-test";
+			packageProductDependencies = (
+				52D97364255D4CDB000F728E /* KingfisherSwiftUI */,
+			);
 			productName = "sky-test";
 			productReference = 52631D51255CACC00047418C /* sky-test.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +291,9 @@
 				Base,
 			);
 			mainGroup = 52631D48255CACC00047418C;
+			packageReferences = (
+				52D97363255D4CDB000F728E /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 52631D52255CACC00047418C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,7 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52631D57255CACC00047418C /* ContentView.swift in Sources */,
+				52631D85255CAD430047418C /* MainScreenView.swift in Sources */,
+				52631D9F255CAE440047418C /* Movie.swift in Sources */,
+				52631D96255CAE1B0047418C /* ApiManager.swift in Sources */,
+				52D97335255D4274000F728E /* DetailView.swift in Sources */,
+				52D97372255D586F000F728E /* MovieCover.swift in Sources */,
+				52D9736D255D55D5000F728E /* MovieCard.swift in Sources */,
+				52D97377255D6B5B000F728E /* MoviesGrid.swift in Sources */,
+				52631D8D255CADB80047418C /* MainScreenModel.swift in Sources */,
 				52631D55255CACC00047418C /* sky_testApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +658,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52D97363255D4CDB000F728E /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52D97364255D4CDB000F728E /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52D97363255D4CDB000F728E /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52631D49255CACC00047418C /* Project object */;
 }

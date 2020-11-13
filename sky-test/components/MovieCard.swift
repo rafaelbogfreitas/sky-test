@@ -6,15 +6,43 @@
 //
 
 import SwiftUI
+import Combine
+import KingfisherSwiftUI
 
 struct MovieCard: View {
+    
+    var movie: Movie
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
+    var isFavorite: Bool = false
+    
+    func makeFavorite() {
+        print("action pressed")
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationLink(destination: DetailView(movie: movie)) {
+            VStack {
+                MovieCover(url: movie.cover_url)
+                
+                HStack {
+                    Button(action: makeFavorite , label: {
+                        Image(systemName: "heart")
+                            .foregroundColor(isFavorite ? .gray : .red)
+                            .font(.title3)
+                    })
+                    Text(movie.title)
+                        .fontWeight(.bold)
+                        .font(.caption2)
+                }
+                
+            }
+            .foregroundColor(.white)
+        }
     }
-}
-
-struct MovieCard_Previews: PreviewProvider {
-    static var previews: some View {
-        MovieCard()
-    }
+    
 }

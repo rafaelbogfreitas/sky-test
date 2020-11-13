@@ -8,13 +8,28 @@
 import SwiftUI
 
 struct MoviesGrid: View {
+    
+    var movies: [Movie]
+    
+    let columns = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+    ]
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct MoviesGrid_Previews: PreviewProvider {
-    static var previews: some View {
-        MoviesGrid()
+        Text("Uma seleção de filmes imperdíveis")
+            .font(.caption2)
+            .fontWeight(.light)
+        ZStack {
+            RoundedRectangle(cornerRadius:0)
+                .fill()
+            LazyVGrid(columns: columns){
+                ForEach(movies) { movie in
+                    MovieCard(movie: movie)
+                }
+            }
+            .foregroundColor(.black)
+            .padding()
+        }
     }
 }
