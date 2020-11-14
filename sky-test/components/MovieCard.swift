@@ -45,5 +45,4 @@ struct MovieCard: View {
         }
         
     }
-    
 }

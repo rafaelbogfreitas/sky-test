@@ -19,10 +19,27 @@ struct SplashScreen: View {
                 ZStack {
                     Rectangle()
                         .fill()
-                        .foregroundColor(.black)
-                    Image(systemName: "film")
-                        .font(.largeTitle)
                         .foregroundColor(.white)
+                    VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 20) {
+                        ZStack(alignment: .center) {
+                            RoundedRectangle(cornerRadius: 5)
+                                .fill()
+                                .foregroundColor(.black)
+                            VStack {
+                                Image(systemName: "film")
+                                Spacer()
+                                Text("Cine")
+                                Text("SKY")
+                            }
+                            .padding(20)
+                            .foregroundColor(.white)
+                            .font(.system(size: 40))
+                        }
+                        .frame(width: 150, height: 200, alignment: .center)
+                        .shadow(color: .gray, radius: 10, x: 0, y: 0)
+                        ProgressView()
+                    }
+                    
                 }
             }
         }
