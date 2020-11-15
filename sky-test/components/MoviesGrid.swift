@@ -9,7 +9,11 @@ import SwiftUI
 
 struct MoviesGrid: View {
     
-    var movies: [Movie]
+    @State var movies: [MovieEntity]
+    
+    var favorites: [MovieEntity] {
+        return movies.filter { $0.liked }
+    }
     
     let columns = [
         GridItem(.flexible()),
@@ -17,12 +21,29 @@ struct MoviesGrid: View {
     ]
     
     var body: some View {
-        Text("Uma seleção de filmes imperdíveis")
-            .font(.caption2)
-            .fontWeight(.light)
-        ZStack {
-            RoundedRectangle(cornerRadius:0)
-                .fill()
+        VStack {
+            NavigationLink(destination: FavoritesView(movies: movies)) {
+                HStack (spacing: 10) {
+                    Text("Ver Todos os Favoritos")
+                        .foregroundColor(.black)
+                    Image(systemName: "heart.fill")
+                        .foregroundColor(.red)
+                }
+                .padding()
+            }
+            .background(
+                RoundedRectangle(cornerRadius: 50)
+                    .fill()
+                    .foregroundColor(.white)
+            )
+            .padding()
+            
+            Text("Uma seleção de filmes imperdíveis")
+                .font(.caption2)
+                .fontWeight(.light)
+                .foregroundColor(.white)
+                .padding()
+            
             LazyVGrid(columns: columns){
                 ForEach(movies) { movie in
                     MovieCard(movie: movie)
@@ -30,6 +51,7 @@ struct MoviesGrid: View {
             }
             .foregroundColor(.black)
             .padding()
+            
         }
     }
 }
