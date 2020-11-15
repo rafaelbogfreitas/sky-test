@@ -9,45 +9,47 @@ import SwiftUI
 
 struct DetailView: View {
     
-    var movie: Movie
+    var movie: MovieEntity
     
     var body: some View {
         ZStack {
             ScrollView {
+                
                 VStack(alignment: .leading, spacing: 20) {
-                    MovieCover(url: movie.cover_url)
-                    Text(movie.title)
-                        .fontWeight(.bold)
-                        .font(.title)
-                    Text(movie.overview)
-                        .font(.body)
-            
-                    HStack(
-                        alignment: .center,
-                        spacing: 20
-                    ) {
-                        
-                        Group {
-                            
-                            HStack {
-                                Image(systemName: "clock")
-                                Text(movie.duration)
-                            }
-                            
-                            HStack {
-                                Image(systemName: "calendar")
-                                Text(movie.release_year)
-                            }
-                        }
-                        .font(.body)
-                        
+                    HStack (alignment: .bottom){
+                        MovieCover(url: movie.cover_url)
+                        TimeAndYear(duration: movie.duration, year: movie.release_year)
                     }
+                    .padding()
+                    
+                    Group {
+                        HStack {
+                            Text("\(movie.liked ? "♥️ " : "")\(movie.title)")
+                                .fontWeight(.bold)
+                                .font(.title)
+                        }
+                        
+                        Text(movie.overview)
+                            .font(.body)
+                    }
+                    .padding(10)
+                    
                 }
                 .padding()
+                .background(
+                    RoundedRectangle(cornerRadius: 5)
+                        .padding()
+                        .foregroundColor(.white)
+                        .shadow(color: .black, radius: 2, x: 0.0, y: 0.0)
+                )
+                
             }
         }
+        .navigationTitle("Detalhes")
+        .background(Color.black)
         .foregroundColor(.black)
     }
 }
+
 
 
