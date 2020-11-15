@@ -8,13 +8,26 @@
 import SwiftUI
 
 struct TimeAndYear: View {
+    
+    var duration: String
+    
+    var year: String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Group {
+            VStack (alignment: .leading) {
+                HStack {
+                    Image(systemName: "clock")
+                    Text(duration)
+                }
+                
+                HStack {
+                    Image(systemName: "calendar")
+                    Text(year)
+                }
+            }
+        }
+        .font(.body)
     }
 }
 
-struct TimeAndYear_Previews: PreviewProvider {
-    static var previews: some View {
-        TimeAndYear()
-    }
-}
