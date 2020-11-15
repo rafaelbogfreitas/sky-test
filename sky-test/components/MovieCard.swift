@@ -7,37 +7,37 @@
 
 import SwiftUI
 import Combine
-import KingfisherSwiftUI
 
 struct MovieCard: View {
     
-    var movie: Movie
+    @State var movie: MovieEntity
     
     let columns = [
         GridItem(.flexible()),
         GridItem(.flexible()),
     ]
     
-    var isFavorite: Bool = false
-    
     func makeFavorite() {
-        print("action pressed")
+        UserDefaults.standard.set(!movie.liked, forKey: movie.id)
+        movie.liked = !movie.liked
     }
     
     var body: some View {
         NavigationLink(destination: DetailView(movie: movie)) {
-            VStack {
+            VStack (alignment: .leading) {
                 MovieCover(url: movie.cover_url)
                 
-                HStack {
+                HStack (alignment: .firstTextBaseline) {
                     Button(action: makeFavorite , label: {
-                        Image(systemName: "heart")
-                            .foregroundColor(isFavorite ? .gray : .red)
+                        Image(systemName: movie.liked ? "heart.fill" : "heart")
+                            .foregroundColor(movie.liked ? .red : .gray)
                             .font(.title3)
                     })
+                    
                     Text(movie.title)
                         .fontWeight(.bold)
                         .font(.caption2)
+                        .lineLimit(1)
                 }
                 
             }
