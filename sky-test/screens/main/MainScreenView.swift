@@ -13,11 +13,8 @@ struct MainScreenView: View {
 
     
     var body: some View {
-        ZStack {
-            RoundedRectangle(cornerRadius: 0)
-                .fill()
-                .foregroundColor(.black)
-            NavigationView {
+        
+        NavigationView {
                 Group {
                     if mainScreenModel.movies.count == 0 {
                         ProgressView()
@@ -25,19 +22,18 @@ struct MainScreenView: View {
                         ScrollView {
                             MoviesGrid(movies: mainScreenModel.movies)
                         }
+                        .background(Color.black)
                     }
                 }
                 .navigationTitle("Cine Sky")
             }
+            
             .font(.caption2)
-        }
-        .foregroundColor(.black)
-        
-        .onAppear {
-            mainScreenModel.fetchData()
-        }
-    }
+            .onAppear {
+                mainScreenModel.fetchData()
+            }
     
+    }
 }
 
 

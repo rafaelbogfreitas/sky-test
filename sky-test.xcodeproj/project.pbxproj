@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5215AFF12561D312000AC92F /* TimeAndYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5215AFF02561D312000AC92F /* TimeAndYear.swift */; };
+		524F027D2561A7DE006AB3BB /* FavoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524F027C2561A7DE006AB3BB /* FavoritesView.swift */; };
 		52631D55255CACC00047418C /* sky_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D54255CACC00047418C /* sky_testApp.swift */; };
 		52631D59255CACC30047418C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52631D58255CACC30047418C /* Assets.xcassets */; };
 		52631D5C255CACC30047418C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52631D5B255CACC30047418C /* Preview Assets.xcassets */; };
@@ -17,6 +19,7 @@
 		52631D96255CAE1B0047418C /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D95255CAE1B0047418C /* ApiManager.swift */; };
 		52631D9F255CAE440047418C /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52631D9E255CAE440047418C /* Movie.swift */; };
 		52B1A62125601D0C00405EBD /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1A62025601D0C00405EBD /* MainScreenViewModel.swift */; };
+		52B1A6322560246300405EBD /* MovieEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B1A6312560246300405EBD /* MovieEntity.swift */; };
 		52D97335255D4274000F728E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D97334255D4274000F728E /* DetailView.swift */; };
 		52D97365255D4CDB000F728E /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 52D97364255D4CDB000F728E /* KingfisherSwiftUI */; };
 		52D9736D255D55D5000F728E /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D9736C255D55D5000F728E /* MovieCard.swift */; };
@@ -43,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5215AFF02561D312000AC92F /* TimeAndYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAndYear.swift; sourceTree = "<group>"; };
+		524F027C2561A7DE006AB3BB /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		52631D51255CACC00047418C /* sky-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sky-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52631D54255CACC00047418C /* sky_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sky_testApp.swift; sourceTree = "<group>"; };
 		52631D58255CACC30047418C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +64,7 @@
 		52631D95255CAE1B0047418C /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		52631D9E255CAE440047418C /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		52B1A62025601D0C00405EBD /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		52B1A6312560246300405EBD /* MovieEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieEntity.swift; sourceTree = "<group>"; };
 		52D97334255D4274000F728E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		52D9736C255D55D5000F728E /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
 		52D97371255D586F000F728E /* MovieCover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCover.swift; sourceTree = "<group>"; };
@@ -92,6 +98,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		524F027B2561A7CD006AB3BB /* favorites */ = {
+			isa = PBXGroup;
+			children = (
+				524F027C2561A7DE006AB3BB /* FavoritesView.swift */,
+			);
+			path = favorites;
+			sourceTree = "<group>";
+		};
 		52631D48255CACC00047418C = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +170,7 @@
 		52631D82255CACDB0047418C /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				524F027B2561A7CD006AB3BB /* favorites */,
 				52D97333255D41F1000F728E /* detail */,
 				52631D83255CAD220047418C /* main */,
 			);
@@ -177,6 +192,7 @@
 			children = (
 				52631D9D255CAE2C0047418C /* DataModel */,
 				52631D95255CAE1B0047418C /* ApiManager.swift */,
+				52B1A6312560246300405EBD /* MovieEntity.swift */,
 			);
 			path = api;
 			sourceTree = "<group>";
@@ -195,6 +211,7 @@
 				52D9736C255D55D5000F728E /* MovieCard.swift */,
 				52D97371255D586F000F728E /* MovieCover.swift */,
 				52D97376255D6B5B000F728E /* MoviesGrid.swift */,
+				5215AFF02561D312000AC92F /* TimeAndYear.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -345,12 +362,15 @@
 				52FAD50F255EB67000520258 /* SplashScreen.swift in Sources */,
 				52B1A62125601D0C00405EBD /* MainScreenViewModel.swift in Sources */,
 				52631D85255CAD430047418C /* MainScreenView.swift in Sources */,
+				5215AFF12561D312000AC92F /* TimeAndYear.swift in Sources */,
+				524F027D2561A7DE006AB3BB /* FavoritesView.swift in Sources */,
 				52631D9F255CAE440047418C /* Movie.swift in Sources */,
 				52631D96255CAE1B0047418C /* ApiManager.swift in Sources */,
 				52D97335255D4274000F728E /* DetailView.swift in Sources */,
 				52D97372255D586F000F728E /* MovieCover.swift in Sources */,
 				52D9736D255D55D5000F728E /* MovieCard.swift in Sources */,
 				52D97377255D6B5B000F728E /* MoviesGrid.swift in Sources */,
+				52B1A6322560246300405EBD /* MovieEntity.swift in Sources */,
 				52631D8D255CADB80047418C /* MainScreenModel.swift in Sources */,
 				52631D55255CACC00047418C /* sky_testApp.swift in Sources */,
 			);
