@@ -47,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		5215AFF02561D312000AC92F /* TimeAndYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeAndYear.swift; sourceTree = "<group>"; };
+		5215AFF82561F147000AC92F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		524F027C2561A7DE006AB3BB /* FavoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesView.swift; sourceTree = "<group>"; };
 		52631D51255CACC00047418C /* sky-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sky-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52631D54255CACC00047418C /* sky_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sky_testApp.swift; sourceTree = "<group>"; };
@@ -129,14 +130,15 @@
 		52631D53255CACC00047418C /* sky-test */ = {
 			isa = PBXGroup;
 			children = (
+				52FAD50E255EB67000520258 /* SplashScreen.swift */,
 				52D9732F255D41D9000F728E /* components */,
 				52631D94255CAE080047418C /* api */,
 				52631D82255CACDB0047418C /* screens */,
+				52631D5A255CACC30047418C /* Preview Content */,
 				52631D54255CACC00047418C /* sky_testApp.swift */,
 				52631D58255CACC30047418C /* Assets.xcassets */,
 				52631D5D255CACC30047418C /* Info.plist */,
-				52631D5A255CACC30047418C /* Preview Content */,
-				52FAD50E255EB67000520258 /* SplashScreen.swift */,
+				5215AFF82561F147000AC92F /* README.md */,
 			);
 			path = "sky-test";
 			sourceTree = "<group>";
